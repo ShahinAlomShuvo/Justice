@@ -31,6 +31,9 @@
               textColor: "#707070",
               btnColor: "#B68C5A",
             },
+            backgroundImage: {
+              "hero-bg": "url(./images/banner.png)",
+            },
           },
         },
       };
@@ -55,6 +58,15 @@
       }
       .font-garamond {
         font-family: "EB Garamond", serif;
+      }
+
+      .heroBg {
+        /* Use linear gradient background */
+        background-image: url(./images/banner.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px; /* Adjust the height as needed */
       }
     </style>
   </head>
@@ -129,14 +141,46 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a
-            class="btn bg-btnColor hover:bg-gray-700 text-white font-poppins capitalize font-semibold"
-            >Free Consultation</a
+          <button
+            class="btn bg-btnColor hover:bg-gray-700 text-white font-poppins capitalize font-semibold outline-none border-none"
           >
+            Free Consultation
+          </button>
         </div>
       </div>
 
       <!-- start hero section  -->
+
+      <div class="hero mt-8 heroBg md:rounded-xl">
+        <div class="hero-overlay bg-opacity-60 md:rounded-xl"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-2xl">
+            <h1
+              class="mb-5 text-4xl font-extrabold font-garamond text-white md:text-6xl"
+            >
+              We Provide Effective <br />
+              Legal Solutions
+            </h1>
+            <p class="mb-5 font-poppins font-normal text-base">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div>
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered font-poppins capitalize font-normal text-base text-[#A0A0A0] md:w-full max-w-xs"
+              />
+              <button
+                class="btn bg-btnColor hover:bg-gray-700 text-white font-poppins capitalize font-semibold outline-none border-none"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
